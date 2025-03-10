@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: product
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+        service-name: product-service
+
+server:
+  port: 8082
