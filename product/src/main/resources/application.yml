@@ -1,13 +1,18 @@
 spring:
   application:
-    name: product
+    name: product-service
   cloud:
     consul:
       host: localhost
       port: 8500
       discovery:
-        enabled: true
-        service-name: product-service
+        service-name: {spring.application.name}
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: product-db
 
 server:
   port: 8082
