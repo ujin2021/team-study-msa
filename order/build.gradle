@@ -31,6 +31,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
     implementation 'org.springframework.cloud:spring-cloud-starter-consul-discovery:4.2.0'
+    implementation 'org.springframework.cloud:spring-cloud-starter-config:4.2.2'
     implementation 'org.springframework.boot:spring-boot-starter-actuator:3.4.3'
     implementation 'org.springframework.cloud:spring-cloud-starter-loadbalancer'
 

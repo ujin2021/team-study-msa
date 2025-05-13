@@ -1,12 +1,5 @@
 spring:
   application:
     name: order-service
-  cloud:
-    consul:
-      host: localhost
-      port: 8500
-      discovery:
-        service-name: ${spring.application.name}
-
-server:
-  port: 8081
+  config:
+    import: optional:configserver:http://localhost:8888
